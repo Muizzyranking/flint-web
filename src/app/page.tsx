@@ -7,12 +7,14 @@ import { Navbar } from "@/components/layout/navbar";
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-[#0A0A0B] text-white antialiased">
+    <div className="min-h-screen overflow-hidden bg-background text-foreground antialiased">
       <Navbar />
-      <Hero />
-      <Handlers />
-      <AlgorithmSwitcher />
-      <FeaturesGrid />
+      <main>
+        <Hero />
+        <Handlers />
+        <AlgorithmSwitcher />
+        <FeaturesGrid />
+      </main>
       <Footer />
     </div>
   );
